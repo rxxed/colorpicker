@@ -8,3 +8,7 @@ colorpicker: main.c
 
 clean:
 	rm -f colorpicker
+
+install:
+	cc -o colorpicker main.c $(CFLAGS)
+	cp colorpicker /usr/local/bin/
